@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text-emphasis test demo</title>
+    <style>
+    body {
+        margin: 30px 0;
+        line-height: 30px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+    em {
+        font-style: normal;
+        font-size: 28px;
+    }
+    table {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    th {
+        padding: 8px 2px;
+        font-weight: normal;
+        color: #039;
+        border-bottom: 2px solid #6678b1;
+        border-right: 30px solid #fff;
+        border-left: 30px solid #fff;
+    }
+    td {
+        padding: 12px 2px 0;
+        color: #669;
+        border-right: 30px solid #fff;
+        border-left: 30px solid #fff;
+    }
+    .yes,
+    .no,
+    .prefix {
+        display: block;
+        padding: 12px;
+        height: 100%;
+        line-height: 24px;
+        text-align: center;
+        color: #FFF;
+        background: #3C763D;
+    }
+    .yes:before {
+        content: 'yes';
+    }
+    .prefix {
+        color: #666;
+        background: #FAD05C;
+    }
+    .no {
+        background: #FF6347;
+    }
+    .no:before {
+        content: 'no';
+    }
+
+    .vertical {
+        display: block;
+        width: 100px;
+        height: 5em;
+        -webkit-writing-mode: vertical-rl;
+        -moz-writing-mode: vertical-rl;
+        -ms-writing-mode: vertical-rl;
+        -o-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>CSS</th>
+            <th>DEMO</th>
+            <th>THIS BROWSER</th>
+        </tr>
+        <tr>
+            <td>text-emphasis:dot;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:filled;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:filled dot;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:open;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:open dot;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:filled circle;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:open circle;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:filled double-circle;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:open double-circle;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:filled triangle;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:open triangle;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:filled sesame;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:open sesame;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:"@";</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:"$$";</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:dot red;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis-style:dot; text-emphasis-color:red;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis-position:under left; text-emphasis:dot;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:dot;</td>
+            <td><em class="vertical">DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis-position:under right; text-emphasis:dot;</td>
+            <td><em class="vertical">DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis-position:under left; text-emphasis:dot;</td>
+            <td><em class="vertical">DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis-position:under; text-emphasis:dot;</td>
+            <td><em>DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis-position:right; text-emphasis:dot;</td>
+            <td><em class="vertical">DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis-position:left; text-emphasis:dot;</td>
+            <td><em class="vertical">DEMO TEXT</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:open sesame;</td>
+            <td><em>今と明日</em></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>text-emphasis:dot;</td>
+            <td><em>现在和明天</em></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script>
+    (function () {
+        function log(str) {
+            var t = document.createTextNode(str);
+            document.body.appendChild(t);
+            document.body.appendChild(document.createElement('br'));
+        }
+        function trim(source) {
+            var pattern = /(^[\s\t\xa0\u3000\ufeff]+)|([\ufeff\u3000\xa0\s\t]+$)/g;
+            return String(source).replace(pattern, '');
+        }
+        function capitalize(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+        function camelize(str) {
+            return str.replace(/\-([a-z])/g, function (r, $1) {
+                return $1.toUpperCase();
+            });
+        }
+        function testCssName(cssName, element) {
+            return element.style[cssName] !== undefined;
+        }
+        function testCssValue(cssName, element, cssValue) {
+            var old = element.style[cssName];
+            if (old === undefined) {
+                return false;
+            }
+
+            if (old === cssValue) {
+                return true;
+            }
+
+            try {
+                element.style[cssName] = cssValue;
+            }
+            catch (e) {}
+
+            var r = element.style[cssName] !== old;
+            log(cssName + ':' + element.style[cssName]);
+            return r;
+        }
+        function getSupportCSS(cssName, opt_cssValue, opt_element) {
+            var testedCSS = getSupportCSS._testedCSS;
+            var cssValue = opt_cssValue || '';
+            var key = cssName + ':' + cssValue;
+            var r = testedCSS[key];
+            if (r != null) {
+                return r;
+            }
+
+            var prefixs = ['Webkit', 'Moz', 'O', 'ms'];
+            var element = opt_element || document.createElement('div');
+            cssName = camelize(cssName);
+            var capCssName = capitalize(cssName);
+            var cssNames = (cssName + ' ' + prefixs.join(capCssName + ' ') + capCssName).split(' ');
+            var testedCssName;
+            var testMethod = cssValue ? testCssValue : testCssName;
+            for (var i = 0, l = cssNames.length; i < l; i++) {
+                testedCssName = cssNames[i];
+                if (testMethod(testedCssName, element, cssValue)) {
+                    r = testedCssName;
+                    break;
+                }
+            }
+
+            return (testedCSS[key] = r || '');
+        }
+        getSupportCSS._testedCSS = {};
+
+        function addCSSStyle(css, element) {
+            var rules = css.split(';');
+            var rule;
+            var s;
+            var supportedCSS;
+            for (var i = 0, l = rules.length; i < l; i++) {
+                rule = rules[i];
+                if (!rule) {
+                    continue;
+                }
+                s = rule.split(':');
+                if (s.length !== 2) {
+                    continue;
+                }
+
+                s[0] = trim(s[0]);
+                s[1] = trim(s[1]);
+
+                supportedCSS = getSupportCSS(s[0], s[1], element);
+                if (supportedCSS) {
+                    element.style[supportedCSS] = s[1];
+                }
+                else {
+                    return false;
+                }
+            }
+
+            if (supportedCSS) {
+                var prefixsReg = /^(Webkit|Moz|O|ms)/;
+                var r = prefixsReg.exec(supportedCSS);
+                return r ? r[1] : true;
+            }
+        }
+
+        log(navigator.userAgent);
+        var trs = Array.prototype.slice.call(document.getElementsByTagName('tr'), 1);
+        var tds;
+        var css;
+        var result;
+        for (var i = 0, l = trs.length; i < l; i++) {
+            tds = trs[i].getElementsByTagName('td');
+            css = tds[0].innerHTML;
+            result = addCSSStyle(css, tds[1].firstChild);
+            if (!result) {
+                result = '<span class="no"><span>';
+            }
+            else if (result === true) {
+                result = '<span class="yes"></span>';
+            }
+            else {
+                result = '<span class="prefix">' + result + '</span>';
+            }
+            tds[2].innerHTML = result;
+        }
+    })();
+    </script>
+</body>
+</html>
